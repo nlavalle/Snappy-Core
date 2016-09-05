@@ -1,0 +1,54 @@
+{
+  "name": "Snappy-Core",
+  "version": "0.1.0",
+  "authors": [
+    ""
+  ],
+  "copyright": "",
+  "description": "",
+  "language": "en-us",
+  "title": "",
+  "configurations": {
+    "Release": {
+      "buildOptions": {
+        "optimize": true,
+        "compile": {
+          "builtIns": {
+            "include": [
+              "src/**/*.cs",
+              "compiler/**/*.cs"
+            ]
+          },
+          "include": "configuration/Release/**/*.cs"
+        }
+      }
+    },
+    "Debug": {
+      "buildOptions": {
+        "optimize": false,
+        "define": [
+          "DEBUG"
+        ],
+        "compile": {
+          "builtIns": {
+            "include": [
+              "src/**/*.cs",
+              "compiler/**/*.cs"
+            ]
+          },
+          "include": "configuration/Debug/**/*.cs"
+        }
+      }
+    }
+  },
+  "packOptions": {
+    "projectUrl": ""
+  },
+  "dependencies": {
+    "System.Resources.ResourceManager": "4.0.1-*",
+    "System.Runtime.InteropServices": "4.1.0-*"
+  },
+  "frameworks": {
+    "netstandard1.1": {}
+  }
+}
